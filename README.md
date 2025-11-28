@@ -1,15 +1,21 @@
 # EX-8-Implement-a-SimpleLSTM-using-TensorFlow-Keras.
-## AIM:
+
+### AIM
+
 To Implement-a-SimpleLSTM-using-TensorFlow-Keras
 
-## ALGORITHM:
+### ALGORITHM
+
 Step 1 — Collect and Prepare Sequential Data
 
-Sequential or time-series data is gathered and preprocessed. The data is scaled (e.g., between 0 and 1) because LSTMs work better with normalized values.
+Sequential or time-series data is gathered and preprocessed.
+The data is scaled (e.g., between 0 and 1) because LSTMs work better with normalized values.
 
 Step 2 — Convert the Data into Input Sequences
 
-The dataset is divided into small overlapping sequences. For example, the last N values are used to predict the next value. The data is reshaped into (samples, timesteps, features) to match LSTM input format.
+The dataset is divided into small overlapping sequences.
+For example, the last N values are used to predict the next value.
+The data is reshaped into (samples, timesteps, features) to match LSTM input format.
 
 Step 3 — Build the LSTM Model Using TensorFlow–Keras
 
@@ -17,22 +23,27 @@ The model is compiled using an optimizer like Adam and a loss function like MSE.
 
 Step 4 — Train the LSTM Model
 
-The model is trained using the training sequences. During training, the LSTM learns long-term dependencies using its memory cell and gates. Validation data is used to monitor performance.
+The model is trained using the training sequences.
+During training, the LSTM learns long-term dependencies using its memory cell and gates.
+Validation data is used to monitor performance.
 
 Step 5 — Evaluate and Perform Predictions
 
-The model is tested on unseen sequences. Prediction results are compared with actual values to measure accuracy. The trained LSTM can now forecast future time steps or classify new sequences.
+The model is tested on unseen sequences.
+Prediction results are compared with actual values to measure accuracy.
+The trained LSTM can now forecast future time steps or classify new sequences.
 
 Step 6 — Visualize and Analyze Results
 
-Graphs such as predicted vs. actual values and training loss curves are plotted. This helps understand how well the model learned the pattern and whether adjustments are needed.
+Graphs such as predicted vs. actual values and training loss curves are plotted.
+This helps understand how well the model learned the pattern and whether adjustments are needed.
 
 
-## PROGRAM:
+### PROGRAM
 
-Name: Sri muthazhazgan P 
+**Name:Sri muthazhagan P**
 
-Register Number: 2305002024
+**Register Number:2305002024**
 
 ~~~
 import numpy as np
@@ -153,21 +164,30 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
 ~~~
 
-## OUTPUT:
-### EPOCH
-<img width="1170" height="438" alt="image" src="https://github.com/user-attachments/assets/5c297f13-b6f3-481a-bb78-0291e4f78ca5" />
+### OUTPUT
 
-### TEST LOSS(MSE):
-<img width="793" height="133" alt="image" src="https://github.com/user-attachments/assets/3992e119-2e52-4295-b73d-fc9cd3c7a2f8" />
+#### Epoch
 
-## PLOT PREDICTIONS:
-<img width="1099" height="512" alt="image" src="https://github.com/user-attachments/assets/3cd6d6d4-a870-4c1b-80a4-31529928dc91" />
+<img width="982" height="357" alt="image" src="https://github.com/user-attachments/assets/9fc170fc-5892-4b0d-9576-8a55c31a1fa1" />
 
-### ROLLING FORECAST:
-<img width="1026" height="341" alt="image" src="https://github.com/user-attachments/assets/3f7251d4-2598-4a01-b2ab-489439b74ad4" />
+#### Test Loss (MSE)
 
-## RESULT:
+<img width="562" height="97" alt="image" src="https://github.com/user-attachments/assets/3e6d9c6a-edda-4e33-9245-c6cc4ca1af7a" />
+
+#### Plotp Predictions
+
+
+<img width="787" height="376" alt="image" src="https://github.com/user-attachments/assets/c20040f0-e9fb-4f4b-93fb-b1f97c640c7e" />
+
+#### Rolling_forecast
+
+<img width="723" height="246" alt="image" src="https://github.com/user-attachments/assets/b7b92c4e-28c2-4692-955b-bc1e0ae0a435" />
+
+
+
+### RESULT
 
 Thus, the Implement-a-SimpleLSTM-using-TensorFlow-Keras is successfully executed.
